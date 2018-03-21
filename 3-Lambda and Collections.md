@@ -331,6 +331,7 @@ map.replaceAll((k, v) -> v.toUpperCase());
 ```Java
 map.merge(key, newMsg, (v1, v2) -> v1+v2);
 ```
+就是说将原来的key对应的值，和新的value合并操作，通过remappingFunction得到结果绑定到key上，当然如果原来key对应的是null，就吧让值等于value，如果函数算出来的是null，就把key这个条目删掉
 
 ### compute()
 
